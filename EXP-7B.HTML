@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#bt1').click(function()
+            {
+                $('.box').append("<div>Enter: <input type='text'></div>");
+            })
+            $('#bt2').click(function(){
+                $('.box').children().last().remove();
+            })
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button id="bt1">ADD</button>
+    <button id="bt2">REMOVE</button>
+    <div class="box">
+    </div>
+</body>
+</html>
